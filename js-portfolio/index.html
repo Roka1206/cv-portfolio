@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">RokaDev</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li>
+              <a
+                href="#inicio"
+                onclick="seleccionar()"
+                >INICIO</a
+              >
+            </li>
+            <li>
+              <a
+                href="#sobremi"
+                onclick="seleccionar()"
+                >SOBRE MI</a
+              >
+            </li>
+            <li>
+              <a
+                href="#skills"
+                onclick="seleccionar()"
+                >SKILLS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#curriculum"
+                onclick="seleccionar()"
+                >CURRICULUM</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                onclick="seleccionar()"
+                >PORTFOLIO</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contacto"
+                onclick="seleccionar()"
+                >CONTACTO</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="nav-responsive"
+          onclick="mostrarOcultarMenu()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section
+      id="inicio"
+      class="inicio"
+    >
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img
+            src="img/he.jpg"
+            alt=""
+          />
+        </div>
+        <h1>Ronald Fonseca</h1>
+        <h2>Ingeniero de Software</h2>
+        <div class="redes">
+          <a href="https://www.linkedin.com/in/rfonsecah92" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/Roka1206" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section
+      id="sobremi"
+      class="sobremi"
+    >
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Ronald Fonseca.</span> Ingeniero de Software
+          especializado en Frontend, me considero una persona creativa y
+          resolutiva, he trabajado en varias areas por lo que los nuevos retos
+          son algo divertido para mí. Si tienes algo en mente , no dudes en
+          <a
+            href="#contacto"
+            class=""
+            style="text-decoration: none"
+          >
+            <span> contactarme. </span>
+          </a>
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                23-06-1992
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                (+34) 655 087 321
+              </li>
+              <li>
+                <strong>Email</strong>
+                rfonsecah92@gmail.com
+              </li>
+              <li>
+                <strong>Website</strong>
+                www.example.com
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>Ingeniero de Software</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-code"></i>
+                <span>CODIGO</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-laptop"></i>
+                <span>TECNOLOGIA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-baseball"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-kitchen-set"></i>
+                <span>COCINAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-people-group"></i>
+                <span>FAMILIA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="CV.pdf"
+          download="CV Ronald Fonseca"
+          style="text-decoration: none"
+        >
+          <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"> </span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section
+      class="skills"
+      id="skills"
+    >
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>JAVASCRIPT</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>VUE JS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>REACT JS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>NODE JS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>55%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>99%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Proyect Management</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>84%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section
+      id="curriculum"
+      class="curriculum"
+    >
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Ingeniería de Software</h4>
+              <span class="casa">Universidad de Ciencias Informáticas</span>
+              <span class="fecha">2010 - 2015</span>
+              <p>
+                En 2015 me graduo de la carrera de Ingeniería en Software por la
+                Universidad de Ciencias Informáticas de Cuba. Durante mi
+                estancia, participé activamente del desarrollo de proyectos de
+                vital importancia para el país.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Certifacion de Scrum Master</h4>
+              <span class="casa">EDAP</span>
+              <span class="fecha">2020</span>
+              <p>
+                Certifación con la que perfeccionó mis conocimientos y
+                habilidades en gestión ágil, lo cual ha sido fundamental en el
+                procesamiento de proyectos en los que he trabajado.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Cloud Computing</h4>
+              <span class="casa">Google Developers</span>
+              <span class="fecha">2021</span>
+              <p>
+                Curso en línea impartido por Google Developers sobre Cloud
+                Computing, donde aprendí a manejar servicios como GCP (Google
+                Cloud Platform) y cómo utilizarlos para desplegar aplicaciones.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Excel Avanzado</h4>
+              <span class="casa">Xunta Galicia</span>
+              <span class="fecha">2022</span>
+              <p>
+                Esta formación me permitió desarrollar habilidades en el uso de
+                Excel avanzado, lo que me ayudó a analizar grandes cantidades de
+                datos y extraer información valiosa para tomar decisiones
+                estratégicas en mi trabajo actual
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Frontend Developer</h4>
+              <span class="casa">IPGLOBAL</span>
+              <span class="fecha">Julio 2022 - Julio 2023</span>
+              <p>
+                Desarrollo de Softwares robustos y eficientes, colaborando con
+                un equipo multidisciplinario. Utilizando tecnologías frontend
+                como ReactJS y VueJS y Backend en PHP.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Software Developer</h4>
+              <span class="casa">Instituto Interculturas</span>
+              <span class="fecha">Octubre 2020 - Julio 20022</span>
+              <p>
+                Desarrollando una plataforma virtual para impartir las clases
+                ofrecidas por la institución. En conjunto con la Universidad de
+                Coruña. Utilizando VueJS y Java.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Scrum Master</h4>
+              <span class="casa">TECNOPREMIER</span>
+              <span class="fecha">Junio 2019 - Diciembre 2019</span>
+              <p>
+                Desarrollo y organizacion del proceso Scrum en el desarrollo de
+                software. Colaboración con equipos de desarrollo y gestión de
+                proyectos.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Analista/Programador y Administrador de Redes</h4>
+              <span class="casa">Universidad de Ciencias InFormáticas</span>
+              <span class="fecha">Agosto 2015 - Marzo 2019</span>
+              <p>
+                Proyecto de creacion de sistema operativo basado en Linux.
+                Implementación de redes WiFi, VPN y servicios web.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section
+      id="portfolio"
+      class="portfolio"
+    >
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img
+              src="img/lemsi.png"
+              alt=""
+            />
+            <div class="overlay">
+              <h3>Aula Virtual</h3>
+              <p>LEMSI</p>
+              <br />
+              <span>Colaborador</span>
+              <a
+                href="https://lemsi.institutointerculturas.com/account/login"
+                target="_blank"
+              >
+                <i
+                  class="fa-solid fa-link fa-2xl"
+                  style="color: white; margin-top: 1.5rem"
+                ></i>
+              </a>
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  margin-bottom: 1rem;
+                  margin-left: 1rem;
+                "
+              >
+                <i class="fa-brands fa-java fa-xl"></i>
+                <i class="fa-brands fa-vuejs fa-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="img/interculturas.png"
+              alt=""
+            />
+            <div class="overlay">
+              <h3>Web Empresarial</h3>
+              <p>Instituto Interculturas</p>
+              <br />
+              <span>Colaborador</span>
+              <a
+                href="https://www.institutointerculturas.com/"
+                target="_blank"
+              >
+                <i
+                  class="fa-solid fa-link fa-2xl"
+                  style="color: white; margin-top: 1.5rem"
+                ></i>
+              </a>
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  margin-bottom: 1rem;
+                  margin-left: 1rem;
+                "
+              >
+                <i class="fa-brands fa-php fa-xl"></i>
+                <i class="fa-brands fa-vuejs fa-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="img/alkira.png"
+              alt=""
+            />
+            <div class="overlay">
+              <h3>Alkiraliving</h3>
+              <p>Gestión de Alquileres</p>
+              <br />
+              <span>Colaborador</span>
+              <a
+                href="https://alkiraliving.com/"
+                target="_blank"
+              >
+                <i
+                  class="fa-solid fa-link fa-2xl"
+                  style="color: white; margin-top: 1.5rem"
+                ></i>
+              </a>
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  margin-bottom: 1rem;
+                  margin-left: 1rem;
+                "
+              >
+                <i class="fa-brands fa-php fa-xl"></i>
+                <i class="fa-brands fa-react fa-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="img/toCook.png"
+              alt=""
+            />
+            <div class="overlay">
+              <h3>Recetas De Cocina</h3>
+              <p>ToCook</p>
+              <br />
+              <span>Autor</span>
+              <a
+                href="https://github.com/Roka1206/ToCook"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-github fa-2xl"
+                  style="color: white; margin-top: 1.5rem"
+                ></i>
+              </a>
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  margin-bottom: 1rem;
+                  margin-left: 1rem;
+                "
+              >
+                <i class="fa-brands fa-html5 fa-xl"></i>
+                <i class="fa-brands fa-css3-alt fa-xl"></i>
+                <i class="fa-brands fa-vuejs fa-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="img/SocialBook.png"
+              alt=""
+            />
+            <div class="overlay">
+              <h3>Red Social</h3>
+              <p>SocialBook</p>
+              <br />
+              <span>Autor</span>
+              <a
+                href="https://github.com/Roka1206/SocialBook/tree/main/SocialBook"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-github fa-2xl"
+                  style="color: white; margin-top: 1.5rem"
+                ></i>
+              </a>
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  margin-bottom: 1rem;
+                  margin-left: 1rem;
+                "
+              >
+                <i class="fa-brands fa-html5 fa-xl"></i>
+                <i class="fa-brands fa-css3-alt fa-xl"></i>
+                <i class="fa-brands fa-vuejs fa-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="img/ClonSpotify.png"
+              alt=""
+            />
+            <div class="overlay">
+              <h3>Clon Spotify</h3>
+              <p>Spotify</p>
+              <br />
+              <span>Autor</span>
+              <a
+                href="https://github.com/Roka1206/weather-app/tree/main/weather-app"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-github fa-2xl"
+                  style="color: white; margin-top: 1.5rem"
+                ></i>
+              </a>
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  margin-bottom: 1rem;
+                  margin-left: 1rem;
+                "
+              >
+                <i class="fa-brands fa-html5 fa-xl"></i>
+                <i class="fa-brands fa-css3-alt fa-xl"></i>
+                <i class="fa-brands fa-vuejs fa-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="img/e-comerce.png"
+              alt=""
+            />
+            <div class="overlay">
+              <h3>E-MALL</h3>
+              <p>Centro Comercial</p>
+              <br />
+              <span>Autor</span>
+              <a
+                href="https://github.com/Roka1206/vue-ecomerce"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-github fa-2xl"
+                  style="color: white; margin-top: 1.5rem"
+                ></i>
+              </a>
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  margin-bottom: 1rem;
+                  margin-left: 1rem;
+                "
+              >
+                <i class="fa-brands fa-html5 fa-xl"></i>
+                <i class="fa-brands fa-js fa-xl"></i>
+                <i class="fa-brands fa-vuejs fa-xl"></i>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              src="img/comingsoon.png"
+              alt=""
+            />
+            <div class="overlay">
+              <!-- <h3>E-MALL</h3> -->
+              <p>Coming Soon!!!</p>
+              <br />
+            <!--  <span>Autor</span>
+               <a
+                href="https://github.com/Roka1206/vue-ecomerce"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-github fa-2xl"
+                  style="color: white; margin-top: 1.5rem"
+                ></i> -->
+              </a>
+              <i class="fa-solid fa-question fa-2xl"></i>
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  margin-bottom: 1rem;
+                  margin-left: 1rem;
+                "
+              >
+               <!--  <i class="fa-brands fa-html5 fa-xl"></i>
+                <i class="fa-brands fa-js fa-xl"></i>
+                <i class="fa-brands fa-vuejs fa-xl"></i> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section
+      id="contacto"
+      class="contacto"
+    >
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+              <form action="https://formsubmit.co/rfonsecah92@gmail.com" method="POST" >
+            <input
+              type="text"
+              placeholder="Tú Nombre"
+              name="nombre"
+            />
+            <input
+              type="text"
+              placeholder="Número telefónico"
+              name="telefono"
+            />
+            <input
+              type="text"
+              placeholder="Dirección de correo"
+              name="email"
+            />
+            <input
+              type="text"
+              placeholder="Tema"
+              name="tema"
+            />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+              name="mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+        </form>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img
+              src="img/ubicacion.png"
+              alt=""
+            />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  A Coruña, España
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  (+34) 655 087 321
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  rfonsecah92@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a
+        href="#inicio"
+        class="arriba"
+      >
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/rfonsecah92" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Roka1206" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
